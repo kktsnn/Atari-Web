@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="src/site.css" />
+    <title>Atari breakout</title>
+</head>
+<body>
+    <div id="head">
+        <div>
+            <div>Level: <span id="level"></span></div>
+            <span>❤ - <span id="lives"></span></span>
+        </div>
+        <div><span id="pauseButton">❚❚</span></div>
+        <span>Score: <span id="score"></span></span>
+    </div>
+    <div id="title" class="text">
+        <h1>Atari: Breakout</h1>
+        Click to start
+    </div>
+    <div id="pause" class="text" hidden>
+        <h2>Paused</h2>
+    </div>
+    <div>
+        <div id="gameOver" class="text" hidden>
+            <h2>Game Over!</h2>
+            <hr>
+            <b>Best scores:</b>
+            <div id="scoreBoard"></div>
+            <hr>
+            Click to play again
+        </div>
+    </div>
+    <div id="cleared" class="text" hidden>
+        <h2>Level Cleared!</h2>
+    </div>
+    <div id="app"></div>
+    <script src="src/app.ts" type="module"></script>
+</body>
+</html>

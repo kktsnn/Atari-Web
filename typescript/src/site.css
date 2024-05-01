@@ -1,0 +1,54 @@
+html {
+    position: relative;
+    min-height: 100%;
+    background-color: #f7ede2;
+    user-select: none;
+    font-family: fantasy;
+    font-size: 50px;
+}
+
+#head {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+
+    color: #f28482;
+
+    padding: .2em;
+    position: relative;
+    z-index: 50;
+}
+
+#pauseButton {
+    display: inline-block;
+    width: 100px;
+    height: 70px;
+    text-align: center;
+
+    cursor: pointer;
+    border: 8px solid #f28482;
+    border-radius: 10%;
+    padding: .1em;
+}
+
+#pauseButton:hover {
+    border-color: #f5cac3;
+    color: #f5cac3;
+}
+
+.text {
+    text-align: center;
+    color: #f6bd60;
+    margin: auto;
+    position: relative;
+    z-index: 50;
+}
+
+#pause {
+    margin-top: 15%;
+}
+
+#gameOver hr {
+    border-color: #f6bd60;
+    width: 40%;
+}
